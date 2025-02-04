@@ -1,11 +1,11 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://astro-paper.pages.dev/", // replace this with your deployed domain
-  author: "Sat Naing",
-  profile: "https://satnaing.dev/",
-  desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
-  title: "AstroPaper",
+  website: "https://julienpoirier-webdev.com/", // replace this with your deployed domain
+  author: "Julien POIRIER",
+  profile: "https://github.com/JulienPoirierWebDev",
+  desc: "Je suis Julien POIRIER, développeur web, formateur en BTS SIO et CDA et futur ingénieur. Ce blog me permet de partager facilement des ressources avec mes apprenants mais aussi, de manière plus extensive, avec la communauté des devs en formation et en reconversion. ",
+  title: "Blog de Jupo_webdev",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
@@ -13,15 +13,15 @@ export const SITE: Site = {
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
   showArchives: true,
   editPost: {
-    url: "https://github.com/satnaing/astro-paper/edit/main/src/content/blog",
+    url: "https://github.com/JulienPoirierWebDev/blog_courses/edit/main/src/content/blog",
     text: "Suggest Changes",
     appendFilePath: true,
   },
 };
 
 export const LOCALE = {
-  lang: "en", // html lang code. Set this empty and default will be "en"
-  langTag: ["en-EN"], // BCP 47 Language Tags. Set this empty [] to use the environment default
+  lang: "fr", // html lang code. Set this empty and default will be "en"
+  langTag: ["fr-FR"], // BCP 47 Language Tags. Set this empty [] to use the environment default
 } as const;
 
 export const LOGO_IMAGE = {
@@ -34,40 +34,43 @@ export const LOGO_IMAGE = {
 export const SOCIALS: SocialObjects = [
   {
     name: "Github",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://github.com/JulienPoirierWebDev",
     linkTitle: ` ${SITE.title} on Github`,
     active: true,
   },
+  /*
   {
     name: "Facebook",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on Facebook`,
     active: true,
   },
+  
   {
     name: "Instagram",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on Instagram`,
     active: true,
   },
+  */
   {
     name: "LinkedIn",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://linkedin.com/in/julien-poirier-8783b5bb",
     linkTitle: `${SITE.title} on LinkedIn`,
     active: true,
   },
   {
     name: "Mail",
-    href: "mailto:yourmail@gmail.com",
+    href: "mailto:poirierjulien@live.com",
     linkTitle: `Send an email to ${SITE.title}`,
     active: false,
   },
   {
     name: "X",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://x.com/jupo_webdev",
     linkTitle: `${SITE.title} on X`,
     active: false,
-  },
+  } /*
   {
     name: "Twitch",
     href: "https://github.com/satnaing/astro-paper",
@@ -151,5 +154,5 @@ export const SOCIALS: SocialObjects = [
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on Mastodon`,
     active: false,
-  },
+  },*/,
 ];

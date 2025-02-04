@@ -23,7 +23,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header />
   <main id="main-content">
     <section id="hero">
-      <h1>Mingalaba</h1>
+      <h1>Un blog de dev, pour les devs juniors et moins juniors</h1>
       <a
         target="_blank"
         href="/rss.xml"
@@ -42,20 +42,22 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       </a>
 
       <p>
-        AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro
-        blog theme. This theme follows best practices and provides accessibility
-        out of the box. Light and dark mode are supported by default. Moreover,
-        additional color schemes can also be configured.
+        Formateur pour adultes depuis 2016 et développeur depuis 2021, je forme
+        les développeurs de demain dans les cursus BTS Services Informatiques
+        aux Organisations (Bac +2), Concepteur Développeur d'Applications (Bac
+        +3) et Master Chef de Projet Digital (Bac +4/5).
       </p>
       <p>
-        Read the blog posts or check
-        <LinkButton
-          className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
-          href="https://github.com/satnaing/astro-paper#readme"
-        >
-          README
-        </LinkButton> for more info.
+        Je crée des formations basée sur les bonnes pratiques et la réalisation
+        de projets concrets permettant aux apprenants de se confronter aux
+        difficultés du métier de développeur, dans un environnement bienveillant
+        et facilitateur. Pour permettre aux apprenants qui suivent mes cours
+        d'aller plus loin, je partage des articles de blogs traitant d'une
+        problématique particulière. Il est maintenant venu le jour où c'est a
+        moi de produire du contenu pour aller plus loin et partager ma vision et
+        mon expertise.
       </p>
+
       {
         // only display if at least one social link is enabled
         socialCount > 0 && (
@@ -73,7 +75,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       featuredPosts.length > 0 && (
         <>
           <section id="featured">
-            <h2>Featured</h2>
+            <h2>Mise en avant</h2>
             <ul>
               {featuredPosts.map(({ data, slug }) => (
                 <Card
@@ -92,7 +94,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     {
       recentPosts.length > 0 && (
         <section id="recent-posts">
-          <h2>Recent Posts</h2>
+          <h2>Articles récents</h2>
           <ul>
             {recentPosts.map(
               ({ data, slug }, index) =>
@@ -111,7 +113,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 
     <div class="all-posts-btn-wrapper">
       <LinkButton href="/posts/">
-        All Posts
+        Tous les articles
         <svg xmlns="http://www.w3.org/2000/svg"
           ><path
             d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
